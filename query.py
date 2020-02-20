@@ -29,7 +29,6 @@ def run_queries(queries, fields_type, n_fields, n_results):
 def main(query_filename):
     dv_res = []
     stored_res = []
-    n_results = 100
     queries = json.load(open(query_filename))
     for n_results in 100, 200:
         for fields_type in ("stored", "docv"):
@@ -37,7 +36,9 @@ def main(query_filename):
             for n_fields in n_fields_values:
                 # run twice in order to warm up the index
                 run_queries(queries, fields_type, n_fields, n_results)
-                res.append(run_queries(queries, fields_type, n_fields, n_results))
+                time = run_queries(queries, fields_type, n_fields, n_results)
+                res.append(time)
+                print("type: " + fields_type + " n_results:" + str(n_results) + "n_fields:" + str(n_fields) + " time:" + str(time))
             with open('results_{}_{}'.format(fields_type, n_results), 'wb') as fp:
                 pickle.dump(res, fp)
 
