@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema name="benchmark" version="1.5">
+
+    <field name="_version_" type="plong" indexed="true" stored="true"/>
+    <field name="_root_" type="string" indexed="true" stored="false"/>
+    <field name="id" type="string" indexed="true" stored="true" required="true" multiValued="false"/>
+
+    <field name="body" type="text_general" indexed="true" stored="true"  docValues="false"/> 
+
+    <field name="field0_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field0_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field1_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field1_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field2_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field2_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field3_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field3_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field4_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field4_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field5_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field5_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field6_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field6_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field7_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field7_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field8_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field8_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field9_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field9_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field10_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field10_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field11_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field11_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field12_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field12_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field13_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field13_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field14_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field14_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field15_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field15_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field16_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field16_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field17_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field17_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field18_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field18_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field19_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field19_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field20_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field20_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field21_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field21_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field22_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field22_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field23_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field23_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field24_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field24_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field25_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field25_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field26_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field26_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field27_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field27_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field28_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field28_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field29_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field29_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field30_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field30_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field31_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field31_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field32_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field32_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field33_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field33_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field34_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field34_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field35_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field35_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field36_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field36_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field37_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field37_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field38_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field38_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field39_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field39_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field40_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field40_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field41_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field41_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field42_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field42_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field43_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field43_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field44_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field44_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field45_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field45_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field46_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field46_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field47_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field47_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field48_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field48_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field49_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field49_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field50_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field50_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field51_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field51_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field52_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field52_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field53_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field53_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field54_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field54_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field55_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field55_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field56_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field56_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field57_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field57_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field58_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field58_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field59_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field59_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field60_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field60_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field61_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field61_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field62_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field62_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field63_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field63_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field64_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field64_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field65_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field65_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field66_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field66_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field67_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field67_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field68_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field68_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field69_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field69_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field70_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field70_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field71_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field71_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field72_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field72_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field73_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field73_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field74_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field74_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field75_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field75_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field76_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field76_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field77_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field77_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field78_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field78_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field79_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field79_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field80_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field80_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field81_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field81_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field82_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field82_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field83_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field83_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field84_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field84_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field85_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field85_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field86_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field86_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field87_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field87_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field88_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field88_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field89_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field89_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field90_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field90_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field91_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field91_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field92_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field92_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field93_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field93_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field94_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field94_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field95_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field95_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field96_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field96_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field97_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field97_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field98_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field98_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    <field name="field99_stored" type="string" indexed="true" stored="true" docValues="false"/>
+    <field name="field99_docvalue" type="string" indexed="true" stored="false" docValues="true"/>
+    
+
+    <uniqueKey>id</uniqueKey>
+
+    <!-- The StrField type is not analyzed, but indexed/stored verbatim. -->
+    <fieldType name="string" class="solr.StrField" sortMissingLast="true" />
+
+    <!-- boolean type: "true" or "false" -->
+    <fieldType name="boolean" class="solr.BoolField" sortMissingLast="true"/>
+    <!--
+      Numeric field types that index values using KD-trees.
+      Point fields don't support FieldCache, so they must have docValues="true" if needed for sorting, faceting, functions, etc.
+    -->
+    <fieldType name="pint" class="solr.IntPointField"/>
+    <fieldType name="pfloat" class="solr.FloatPointField"/>
+    <fieldType name="plong" class="solr.LongPointField"/>
+    <fieldType name="pdouble" class="solr.DoublePointField"/>
+
+    <fieldType name="pints" class="solr.IntPointField" docValues="true" multiValued="true"/>
+    <fieldType name="pfloats" class="solr.FloatPointField" docValues="true" multiValued="true"/>
+    <fieldType name="plongs" class="solr.LongPointField" docValues="true" multiValued="true"/>
+    <fieldType name="pdoubles" class="solr.DoublePointField" docValues="true" multiValued="true"/>
+
+    <!-- KD-tree versions of date fields -->
+    <fieldType name="pdate" class="solr.DatePointField" docValues="true"/>
+    <fieldType name="pdates" class="solr.DatePointField" docValues="true" multiValued="true"/>
+
+    <fieldType name="text_general" class="solr.TextField" positionIncrementGap="100"> 
+      <analyzer type="index"> 
+        <tokenizer class="solr.StandardTokenizerFactory"/>
+        <!-- in this example, we will only use synonyms at query time
+        <filter class="solr.SynonymFilterFactory" synonyms="index_synonyms.txt" ignoreCase="true" expand="false"/>
+        -->
+        <filter class="solr.LowerCaseFilterFactory"/>
+      </analyzer>
+      <analyzer type="query">
+        <tokenizer class="solr.StandardTokenizerFactory"/>
+        <filter class="solr.LowerCaseFilterFactory"/>
+      </analyzer>
+    </fieldType>
+</schema>

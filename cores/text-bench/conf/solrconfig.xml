@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+    <luceneMatchVersion>LATEST</luceneMatchVersion>
+    <dataDir>${solr.data.dir:}/text-bench</dataDir>
+    <directoryFactory name="DirectoryFactory"
+                      class="${solr.directoryFactory:solr.NRTCachingDirectoryFactory}">
+    </directoryFactory>
+
+    <codecFactory class="solr.SchemaCodecFactory"/>
+
+    <schemaFactory class="ClassicIndexSchemaFactory"/>
+
+    <indexConfig>
+        <lockType>${solr.lock.type:native}</lockType>
+        <infoStream>true</infoStream>
+    </indexConfig>
+
+    <jmx/>
+    <updateHandler class="solr.DirectUpdateHandler2">
+        <updateLog>
+            <str name="dir">${solr.ulog.dir:}</str>
+            <int name="numVersionBuckets">${solr.ulog.numVersionBuckets:65536}</int>
+        </updateLog>
+    </updateHandler>
+
+    <query>
+        <maxBooleanClauses>1024</maxBooleanClauses>
+        <enableLazyFieldLoading>true</enableLazyFieldLoading>
+        <queryResultWindowSize>20</queryResultWindowSize>
+        <queryResultMaxDocsCached>200</queryResultMaxDocsCached>
+        <useColdSearcher>false</useColdSearcher>
+        <maxWarmingSearchers>2</maxWarmingSearchers>
+    </query>
+
+    <requestDispatcher handleSelect="false">
+        <requestParsers enableRemoteStreaming="true"
+                        multipartUploadLimitInKB="2048000"
+                        formdataUploadLimitInKB="2048"
+                        addHttpRequestToContext="false"/>
+        <httpCaching never304="true"/>
+
+    </requestDispatcher>
+
+    <requestHandler name="/select" class="solr.SearchHandler">
+        <lst name="defaults">
+            <str name="echoParams">none</str>
+            <str name="wt">json</str>
+            <str name="rows">0</str>
+            <str name="df">corpus</str>
+            <str name="alt.q">*:*</str>
+        </lst>
+    </requestHandler>
+
+    <requestHandler name="/get" class="solr.RealTimeGetHandler">
+        <lst name="defaults">
+            <str name="omitHeader">true</str>
+            <str name="wt">json</str>
+            <str name="indent">true</str>
+        </lst>
+    </requestHandler>
+
+    <initParams path="/update/**,/parentLabel,/select,/tvrh,/elevate,/spell">
+        <lst name="defaults">
+            <str name="update.chain">defaultChain</str>
+        </lst>
+    </initParams>
+
+    <updateRequestProcessorChain name="defaultChain">
+        <processor class="solr.UUIDUpdateProcessorFactory">
+            <str name="fieldName">id</str>
+        </processor>
+        <processor class="solr.LogUpdateProcessorFactory"/>
+        <processor class="solr.RunUpdateProcessorFactory"/>
+    </updateRequestProcessorChain>
+    
+</config>
